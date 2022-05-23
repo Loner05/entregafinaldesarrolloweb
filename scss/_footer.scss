@@ -1,0 +1,40 @@
+footer{
+
+    display: flex;
+    position: center;
+    justify-content: center;
+  
+    width: 95%;
+    color: map-get( $colors, "light-grey" );
+    background-color: map-get( $colors, "whiter" );
+    align-items: center;
+    justify-content: space-around;
+    grid-area: footer;
+    border-bottom: 0.5rem solid map-get( $colors, "blue-minhaus" );
+    margin: 0.5rem 2% 1rem 2%;
+    display: flex;
+    flex-direction: row;
+
+    a{
+        text-decoration: none;
+        color: map-get( $colors, "light-grey" );
+
+    }
+
+   
+}
+
+.item-footer{
+
+li{
+
+    padding: 10px;
+
+    line-height: 1rem;
+    list-style: none;
+
+
+}
+
+
+}

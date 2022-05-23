@@ -1,0 +1,150 @@
+.menu-box {
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+  background-color: map-get( $colors, "whiter" );
+  width: 95%;
+  padding-top: 0;
+  height: 1fr;
+  border-radius: 0.5rem;
+
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-top: 0.5rem;
+  z-index: 999;
+  align-items: center;
+
+  img {
+    border-radius: 0.5rem;
+    width: 50%;
+    margin-right: 10px;
+    align-content: center;
+  }
+  @include responsive {
+    justify-content: center; /* centra el contenido horizontalmmente */
+    align-items: center;
+    position: sticky;
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    background-color: map-get( $colors, "whiter" );
+    width: 95%;
+    padding-top: 0;
+    height: 3fr;
+    border-radius: 0.5rem;
+
+    z-index: 999;
+    margin-left: 2%;
+    margin-right: 2% img {
+      display: flex; /* propiedad flexbox */
+      justify-content: center; /* centra el contenido horizontalmmente */
+      align-items: center;
+      width: 90px;
+      height: 30px;
+    }
+  }
+}
+
+.menu {
+  ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0 0 0 20% 0;
+    padding: 0;
+    display: flex;
+    list-style: none;
+    white-space: nowrap;
+    background-color: map-get( $colors, "whiter" );
+  }
+
+  li a {
+    display: block;
+    padding: 15px 20px;
+    text-decoration: none;
+    color: rgb(88, 86, 86);
+  }
+
+  li {
+    text-align: center;
+    flex-grow: 1;
+  }
+
+  
+  @include responsive {
+    position: absolute;
+    right: 0;
+    margin-right: -80%;
+    transition: all 0.2s;
+    width: 70%;
+    height: 100%;
+
+    a {
+      display: block;
+      height: 100%;
+      z-index: 999;
+      margin-right: -80%;
+    }
+
+    li a {
+      line-height: 60px;
+      display: flex;
+      flex-direction: column;
+      justify-content: left;
+      text-align: left;
+    }
+    ul {
+      flex-direction: column;
+      text-align: center;
+      justify-content: left;
+    }
+  }
+}
+
+#btn-menu {
+  justify-content: right;
+  display: none;
+
+  padding: 30px;
+
+  @include responsive {
+    &:checked ~ .menu {
+      margin: 0;
+    }
+  }
+}
+
+.btn-hamburger {
+  display: none;
+  position: relative;
+  justify-content: right;
+
+  border: 1px solid gray;
+  margin: 30px 20px 10px 15px;
+  z-index: 999;
+  background-color: black;
+  width: 100%;
+  height: 2px;
+  margin-top: 0.5px;
+  width: 30px;
+
+  @include responsive {
+    display: block;
+  }
+}
+
+.btn-menu {
+  margin: 5px;
+  padding: 10px;
+}
+
+.img-btn-menu {
+  &:hover {
+    cursor: pointer;
+    background: gray;
+  }
+
+  @include responsive {
+    display: block;
+  }
+}

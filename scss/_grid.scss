@@ -1,0 +1,135 @@
+
+/*Desktop grid*/
+
+
+.index-container {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 15rem auto auto auto 15rem;
+    background-color: map-get($colors, "silver-cloud" );
+    grid-template-rows: 40rem 25rem auto 30rem 15rem;
+    grid-template-areas:
+      "container-x container-x container-x container-x container-x"
+      "container-2 container-2 container-2  container-2 container-2"
+      "grid-item1 grid-item1 grid-item1 grid-item2 grid-item2 "
+      "blog-card blog-card blog-card  blog-card blog-card"
+      "footer footer footer footer footer";
+   
+      @include responsive {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto auto auto auto;
+    grid-template-areas:
+      "container-x container-x "
+      "container-2 container-2 "
+      "grid-item1 grid-item1 "
+      "grid-item2 grid-item2 "
+      "blog-card blog-card "
+      "footer footer";
+   }
+      
+        
+      
+  }
+
+  .galeria-container {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 10rem 10rem 10rem 10rem 10rem;
+    grid-template-rows: 45rem 25rem 30rem 20rem;
+    grid-template-areas:
+      "imagen-galeria-1 imagen-galeria-1 imagen-galeria-1 imagen-galeria-2 imagen-galeria-2 imagen-galeria-2"
+      "imagen-galeria-1 imagen-galeria-1 imagen-galeria-1 imagen-galeria-3 imagen-galeria-3 imagen-galeria-3"
+      "imagen-galeria-4 imagen-galeria-4 imagen-galeria-4 imagen-galeria-5 imagen-galeria-5 imagen-galeria-5"
+      "imagen-galeria-6 imagen-galeria-6 imagen-galeria-7 imagen-galeria-7 imagen-galeria-8 imagen-galeria-8"
+      "footer footer footer footer footer footer";
+
+
+      @include responsive {
+
+    
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto  auto auto auto auto auto auto auto;
+        grid-template-areas:
+          "title-box-gallery title-box-gallery"
+          "imagen-galeria-1 imagen-galeria-2"
+          "imagen-galeria-3 imagen-galeria-3"
+          "imagen-galeria-4 imagen-galeria-4"
+          "imagen-galeria-5 imagen-galeria-5"
+          "imagen-galeria-6 imagen-galeria-7"
+          "imagen-galeria-8 imagen-galeria-8  "
+          "footer footer footer footer footer footer";
+      }
+  }
+  
+
+
+  .pqrs-container {
+    margin-top: 0;
+    background-color: map-get( $colors, "silver-cloud" );
+    grid-gap: 12px;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto auto auto auto auto;
+    grid-template-areas:
+          "pqrs-title pqrs-title pqrs-title"
+      "pqrs-box pqrs-box"
+          "footer footer footer footer footer footer";
+  }
+
+
+  .contact-container {
+    display: grid;
+    grid-gap: 7px;
+    grid-template-columns: 10rem auto auto 10rem 10rem;
+    grid-template-rows: 25rem 45rem 15rem;
+    grid-template-areas:
+      "info info formulario-contacto formulario-contacto formulario-contacto"
+      "visitanos visitanos  formulario-contacto formulario-contacto formulario-contacto"
+      "footer footer footer footer footer";
+
+      @include responsive {
+        
+          display: grid;
+          grid-gap: 7px;
+          grid-template-columns: auto;
+          grid-template-rows: 25rem 45rem 52rem 15rem;
+          grid-template-areas:
+            "info"
+            "visitanos"
+            "formulario-contacto"
+            "footer";
+
+
+      }
+  }
+
+
+  .precheckin-container {
+    display: grid;
+    grid-gap: 7px;
+    grid-template-columns: auto 20fr auto;
+    grid-template-rows: 20rem 12rem 35rem 10rem;
+    grid-template-areas:
+      "header-precheckin header-precheckin header-precheckin"
+      " texto-header-precheckin texto-header-precheckin texto-header-precheckin"
+      "form-precheckin-box form-precheckin-box form-precheckin-box"
+      "footer footer footer";
+
+
+
+   @include responsive{
+    display: grid;
+    grid-gap: 7px;
+    grid-template-columns: auto 20fr auto;
+    grid-template-rows: 15rem 20rem 35rem 10rem;
+    grid-template-areas:
+      "header-precheckin header-precheckin header-precheckin"
+      " texto-header-precheckin texto-header-precheckin texto-header-precheckin"
+      "form-precheckin-box form-precheckin-box form-precheckin-box"
+      "footer footer footer";
+
+
+   }   
+  }

@@ -1,0 +1,127 @@
+ 
+ 
+ *{
+
+    margin: 0; 
+ padding: 0;
+box-sizing: border-box;
+ font-family: "Space Grotesk", sans-serif;
+ }
+
+
+
+
+$colors:(
+    "blue-minhaus": #0e5895,
+    "light-grey": #7a7d7d,
+    "whiter": #ffffff,
+    "bone": #d7ceb2,
+   "silver-chalice": #a2abab,
+   "silver-cloud": #ececec,
+);
+
+@mixin responsive {
+
+    @media (max-width: 768px){
+    @content
+
+    }
+
+
+
+}
+
+
+
+
+// forms css
+
+
+.info {
+    padding-left: 15%;
+    padding-top: 20%;
+    background-color: #0e5895;
+    grid-area: info;
+    color: var(--white);
+  }
+  
+  h2 {
+    padding-bottom: 30px;
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 20px 15px;
+    border-radius: 5%;
+    text-decoration: none;
+    text-shadow: 0 1px 1px rebeccapurple;
+    box-shadow: 0 0 1px var(--light-grey);
+    font-family: "Space Grotesk", sans-serif;
+  }
+  
+  form {
+    margin: 0 auto;
+    width: 80%;
+    height: fit-content;
+    padding: 30px;
+    background: var(--white);
+    border-radius: 5px;
+    color: var(--light-grey);
+  }
+  form p {
+    padding: 10px;
+  }
+  input,
+  textarea {
+    outline: none;
+    border: 0;
+  }
+  
+  .field {
+    border: solid 1px #ccc;
+    padding-top: 10px;
+    font-size: 0.8em;
+    width: 90%;
+    border-radius: 5px;
+  }
+  
+  .field:focus {
+    border: 2px solid #5387ac;
+  }
+
+  .info-text {
+    line-height: 30px;
+    font-size: 20px;
+    font-weight: lighter;
+  }
+  
+  .form-title {
+    padding-bottom: 30px;
+  }
+
+
+  .btn-minhaus {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px 32px;
+    font-size: 18px;
+    font-weight: 700;
+    background: transparent;
+    border: 2px solid white;
+    border-radius: 8px;
+    text-transform: capitalize;
+    color: white;
+    outline: 0;
+  
+    margin-top: 15px;
+  }
+  
+  .btn-minhaus.gradient {
+    border: 0;
+    background-image: linear-gradient(to left, #0e5895, #00a1d2);
+  }
+  
+  .btn-minhaus.gradient:active {
+    transform: translateY(3px);
+  }

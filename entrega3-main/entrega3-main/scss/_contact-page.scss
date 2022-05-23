@@ -1,0 +1,86 @@
+.visitanos {
+    padding-top: 70px;
+    background-color: map-get($colors,"silver-chalice");;
+    grid-area: visitanos;
+    padding-left: 15%;
+   
+  }
+  
+  .formulario-contacto {
+    display: grid;
+    grid-template-rows:
+      auto 2fr
+      auto;
+    padding-top: 100px;
+    background-color: map-get($colors,"bone");;
+    grid-area: formulario-contacto;
+  }
+  
+  .info {
+    padding-left: 15%;
+    padding-top: 20%;
+    background-color: #0e5895;
+    grid-area: info;
+    color: map-get($colors,"whiter");;
+  }
+  
+  h2 {
+    padding-bottom: 30px;
+  }
+
+
+
+  form {
+    margin: 0 auto;
+    width: 80%;
+    height: fit-content;
+    padding: 30px;
+    background: map-get($colors,"whiter");
+    border-radius: 5px;
+    color: map-get($colors,"light-grey");;
+  }
+  form p {
+    padding: 10px;
+  }
+  input,
+  textarea {
+    outline: none;
+    border: 0;
+  }
+  
+  .field {
+    border: solid 1px #ccc;
+    padding-top: 10px;
+    font-size: 0.8em;
+    width: 90%;
+    border-radius: 5px;
+  }
+  
+  .field:focus {
+    border: 2px solid #5387ac;
+  }
+  
+  .formulario-contacto h1 , h2{
+    color: map-get($colors,"whiter");;
+    padding: 60px 0 40px 60px;
+  }
+  
+  .info-text {
+    line-height: 30px;
+    font-size: 20px;
+    font-weight: lighter;
+  }
+  
+  .form-title {
+    padding-bottom: 30px;
+  }
+  
+  .visitanos {
+    color: map-get($colors,"whiter");
+    font-size: 20px;
+  }
+  
+  .visitanos-map {
+    padding-top: 20px;
+    width: 80%;
+  }

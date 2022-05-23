@@ -1,0 +1,77 @@
+
+.imagen-galeria-1 {
+    grid-area: imagen-galeria-1;
+   
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .imagen-galeria-2 {
+    grid-area: imagen-galeria-2;
+    
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .imagen-galeria-3 {
+    grid-area: imagen-galeria-3;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .imagen-galeria-4 {
+    grid-area: imagen-galeria-4;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .imagen-galeria-5 {
+    grid-area: imagen-galeria-5;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .imagen-galeria-6 {
+    grid-area: imagen-galeria-6;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .imagen-galeria-7 {
+    grid-area: imagen-galeria-7;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .imagen-galeria-8 {
+    grid-area: imagen-galeria-8;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .galeria-title {
+
+padding-top: 100px;
+padding-bottom: 234px;
+display: flex;
+justify-content: center;
+color: map-get($colors, "whiter" );
+
+  }
+
+
+.title-box-gallery{
+width: 100%;
+background-color: map-get($colors, "bone");
+height: 40vh;
+margin-bottom: 15px;
+align-items: center;
+}
